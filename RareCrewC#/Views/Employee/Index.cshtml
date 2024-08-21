@@ -12,8 +12,13 @@
         {
             <tr style="@(item.TotalHoursWorked<100 ? "background-color : #f2ac9d;" : ""))">
                 <td>@item.EmployeeName</td>
-                <td>@item.TotalHoursWorked</td> 
+                <td>@item.TotalHoursWorked</td>
             </tr>
         }
     </tbody>
 </table>
+@{
+    var imagePath = Url.Content("~/images/employee_chart.png");
+}
+
+<img src="@imagePath" alt="Employee Chart"   />

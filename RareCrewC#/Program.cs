@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<ApiService>();
 builder.Services.AddScoped<EmployeeService>();
+builder.Services.AddScoped<ChartGenerator>();
 
 var app = builder.Build();
 
